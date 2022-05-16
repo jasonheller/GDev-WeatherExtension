@@ -30,4 +30,4 @@ If you are using the Free plan of openweathermap you should only update your wea
 This would be 604.800 calls a month. You "only" got 1.000.000 calls a month. So keep that in mind..
 
 # Credits
-Weather API from https://openweathermap.org/api
+Weather API from https://openweathermap.org/api 
