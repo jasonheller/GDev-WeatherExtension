@@ -22,8 +22,8 @@ To change a Text value to let's say the temperature. You will need to type Varia
 11. Wind Angle                   | response2.wind.deg
 12. Wind Speed                   | response2.wind.speed
 
-** If you need more commands you can find them using the debugger and looking into the response2 variable.
-** If you want to set the Language for example for the Weather Descriptions go into the Extension, into GetWeather and add [+"&lang=de"] at the end of the URL. (Replace "de" with your language, e.g. de, en, fr, it etc.."
+** If you need more commands you can find them using the debugger and looking into the response2 variable.**
+** If you want to set the Language for example for the Weather Descriptions go into the Extension, into GetWeather and add [+"&lang=de"] at the end of the URL. (Replace "de" with your language, e.g. de, en, fr, it etc.."**
 
 # Important
 If you are using the Free plan of openweathermap you should only update your weather data 15 times a minute.
