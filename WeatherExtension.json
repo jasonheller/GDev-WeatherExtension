@@ -1,0 +1,195 @@
+{
+  "author": "",
+  "category": "Network",
+  "description": "You need 2 scene variables to use this extension, you will also need an API Key from open weather map. \n- response -> for catching results\n- response2 -> for converting the result\n\n# Usage\nTo change a Text value to let's say the temperature. You will need to type VariableString(response2.main.temp)\n\n# Commands\nTemperature                   = response2.main.temp\nFeeled temperature        = response2.main.feels_like\nMinimum temperature   = response2.main.temp_min\nMaximum temperature   = response2.main.temp_max\nPressure                           = response2.main.pressure\nHumidity                          = response2.main.humidity\nCountry                            = response2.sys.country\nCity                                   = response2.name\nWeather Title                    = response2.weather.value.main\nWeather Description         = response2.weather.value.description\nWind Angle                       = response2.wind.deg\nWind Speed                      = response2.wind.speed\n\n** If you need more values you can find them using the debugger and looking into the response2 variable.\n** If you want to set the Language for example for the Weather Descriptions go into the Extension, into GetWeather and add [+\"&lang=de\"] at the end of the URL. (Replace \"de\" with your language, e.g. de, en, fr, it etc..\"\n\n# Important\nIf you are using the Free plan of openweathermap you should only update your weather data 15 times a minute.\nThis would be 604.800 calls a month. You \"only\" got 1.000.000 calls a month. So keep that in mind..\n\n# Credits\nWeather API from https://openweathermap.org/api",
+  "extensionNamespace": "",
+  "fullName": "Weather",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXdlYXRoZXItcGFydGx5LWNsb3VkeSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMi43NCw1LjQ3QzE1LjEsNi41IDE2LjM1LDkuMDMgMTUuOTIsMTEuNDZDMTcuMTksMTIuNTYgMTgsMTQuMTkgMTgsMTZWMTYuMTdDMTguMzEsMTYuMDYgMTguNjUsMTYgMTksMTZBMywzIDAgMCwxIDIyLDE5QTMsMyAwIDAsMSAxOSwyMkg2QTQsNCAwIDAsMSAyLDE4QTQsNCAwIDAsMSA2LDE0SDYuMjdDNSwxMi40NSA0LjYsMTAuMjQgNS41LDguMjZDNi43Miw1LjUgOS45Nyw0LjI0IDEyLjc0LDUuNDdNMTEuOTMsNy4zQzEwLjE2LDYuNSA4LjA5LDcuMzEgNy4zMSw5LjA3QzYuODUsMTAuMDkgNi45MywxMS4yMiA3LjQxLDEyLjEzQzguNSwxMC44MyAxMC4xNiwxMCAxMiwxMEMxMi43LDEwIDEzLjM4LDEwLjEyIDE0LDEwLjM0QzEzLjk0LDkuMDYgMTMuMTgsNy44NiAxMS45Myw3LjNNMTMuNTUsMy42NEMxMywzLjQgMTIuNDUsMy4yMyAxMS44OCwzLjEyTDE0LjM3LDEuODJMMTUuMjcsNC43MUMxNC43Niw0LjI5IDE0LjE5LDMuOTMgMTMuNTUsMy42NE02LjA5LDQuNDRDNS42LDQuNzkgNS4xNyw1LjE5IDQuOCw1LjYzTDQuOTEsMi44Mkw3Ljg3LDMuNUM3LjI1LDMuNzEgNi42NSw0LjAzIDYuMDksNC40NE0xOCw5LjcxQzE3LjkxLDkuMTIgMTcuNzgsOC41NSAxNy41OSw4TDE5Ljk3LDkuNUwxNy45MiwxMS43M0MxOC4wMywxMS4wOCAxOC4wNSwxMC40IDE4LDkuNzFNMy4wNCwxMS4zQzMuMTEsMTEuOSAzLjI0LDEyLjQ3IDMuNDMsMTNMMS4wNiwxMS41TDMuMSw5LjI4QzMsOS45MyAyLjk3LDEwLjYxIDMuMDQsMTEuM00xOSwxOEgxNlYxNkE0LDQgMCAwLDAgMTIsMTJBNCw0IDAgMCwwIDgsMTZINkEyLDIgMCAwLDAgNCwxOEEyLDIgMCAwLDAgNiwyMEgxOUExLDEgMCAwLDAgMjAsMTlBMSwxIDAgMCwwIDE5LDE4WiIgLz48L3N2Zz4=",
+  "name": "Weather",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/weather-partly-cloudy.svg",
+  "shortDescription": "gets the weather data from an API Key of openweathermap",
+  "version": "1.0",
+  "tags": [
+    "weather"
+  ],
+  "authorIds": [
+    "xTo1gsiufofF3Y1uFszTPKmnPfE2"
+  ],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "description": "",
+      "fullName": "Get Weather Data",
+      "functionType": "Action",
+      "group": "",
+      "name": "GetWeather",
+      "private": false,
+      "sentence": "get weather data with key _PARAM1_ from the latitude: _PARAM2_ and longtitude: _PARAM3_ using celsius _PARAM4_?",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "GetArgumentAsBoolean"
+              },
+              "parameters": [
+                "\"using_celsius\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"https://api.openweathermap.org/data/2.5/weather?lat=\"+ToString(GetArgumentAsNumber(\"lat\"))+\"&lon=\"+ToString(GetArgumentAsNumber(\"long\"))+\"&appid=\"+GetArgumentAsString(\"api_key\")+\"&units=metric\"+\"&lang=de\"",
+                "\"\"",
+                "\"GET\"",
+                "\"\"",
+                "response",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "GetArgumentAsBoolean"
+              },
+              "parameters": [
+                "\"using_celsius\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"https://api.openweathermap.org/data/2.5/weather?lat=\"+ToString(GetArgumentAsNumber(\"lat\"))+\"&lon=\"+ToString(GetArgumentAsNumber(\"long\"))+\"&appid=\"+GetArgumentAsString(\"api_key\")+\"&units=imperial\"+\"&lang=de\"",
+                "\"\"",
+                "\"GET\"",
+                "\"\"",
+                "response",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "api key",
+          "longDescription": "",
+          "name": "api_key",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        },
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "latitude",
+          "longDescription": "",
+          "name": "lat",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "expression"
+        },
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "longtitude",
+          "longDescription": "",
+          "name": "long",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "expression"
+        },
+        {
+          "codeOnly": false,
+          "defaultValue": "yes",
+          "description": "Celsius?",
+          "longDescription": "",
+          "name": "using_celsius",
+          "optional": true,
+          "supplementaryInformation": "",
+          "type": "yesorno"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "decypher the data from Open Weather Map.",
+      "fullName": "Decypher Data from OWM",
+      "functionType": "Condition",
+      "group": "",
+      "name": "GotValue",
+      "private": false,
+      "sentence": "read data from _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "JSONToVariableStructure"
+              },
+              "parameters": [
+                "VariableString(response)",
+                "response2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "data variable",
+          "longDescription": "",
+          "name": "data",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}
