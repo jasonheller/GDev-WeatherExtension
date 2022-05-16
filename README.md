@@ -1,8 +1,8 @@
 # OWM GDev 5 Extension
 
 # Example
-![Here you can see how i use the extension](https://i.imgur.com/i0O66UY.png)
-![](https://i.imgur.com/BQePBuE.png)
+![Here you can see how i use the extension](https://i.imgur.com/6PsvHYo.png)
+![](https://i.imgur.com/nrlCNof.png)
 
 
 You need to create 2 scene variables to use this extension, you will also need an API Key from open weather map (https://openweathermap.org/). 
