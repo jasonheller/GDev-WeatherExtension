@@ -1,5 +1,9 @@
 # OWM GDev 5 Extension
 
+# Example
+![Here you can see how i use the extension](https://imgur.com/a/HmhKMHI)
+
+
 You need to create 2 scene variables to use this extension, you will also need an API Key from open weather map (https://openweathermap.org/). 
 - response -> for catching results
 - response2 -> for converting the result
