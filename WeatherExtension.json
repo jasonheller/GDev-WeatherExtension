@@ -11,7 +11,8 @@
   "shortDescription": "gets the weather data from an API Key of openweathermap",
   "version": "1.0",
   "tags": [
-    "weather"
+    "weather",
+    "test"
   ],
   "authorIds": [
     "xTo1gsiufofF3Y1uFszTPKmnPfE2"
